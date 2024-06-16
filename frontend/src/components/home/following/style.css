@@ -1,0 +1,48 @@
+.switch-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .switch-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .switch-label-text {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .switch-label-background {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .switch-handle {
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .switch-label-background.active {
+    background-color: #3498db;
+  }
+  
+  .switch-label-background.active .switch-handle {
+    transform: translateX(30px);
+  }
+  
+  .switch-label.active .switch-label-text {
+    color: #fff; /* Adjust text color when active */
+  }

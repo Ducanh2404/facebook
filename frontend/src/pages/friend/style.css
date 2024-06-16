@@ -1,0 +1,107 @@
+.listRequest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: box-shadow 0.3s;
+}
+  
+.listRequest:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.title{
+    display: flex;
+    gap:10px;
+    margin-bottom:20px
+}
+
+.request{
+    display: flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.btn_accept,
+.btn_deny {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  color: #3498db;
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn_accept:hover {
+  background-color: #3498db;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn_deny {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+.btn_deny:hover {
+  background-color: #e74c3c;
+  color: #fff;
+  border-color: #fff;
+}
+
+.avatar{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+}
+
+.name{
+    margin-top:7px
+}
+
+.request_page{
+
+}
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  background-color: #3498db; /* Background color */
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Padding around the content */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+  margin-top: 70px;
+}
+
+/* Add this to your existing CSS file or create a new one */
+
+.empty_request {
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  font-size: 18px;
+  color: #555; /* Dark gray text color */
+  background-color: #f1f1f1; /* Light gray background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+
+.empty_request::before {
+  content: "\1F622"; /* Unicode for a sad face emoji */
+  display: block;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
