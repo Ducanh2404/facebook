@@ -16,7 +16,6 @@ jobs:
             - name: Build and start application
               run: |
                   cd ~/facebook/frontend
-                  npm i
-                  npm i pm2
+                  sudo npm i
                   pm2 stop all
                   pm2 start npm --name "my-react-app" -- start
