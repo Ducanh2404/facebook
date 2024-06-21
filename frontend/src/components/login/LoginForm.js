@@ -56,7 +56,7 @@ export default function LoginForm({setVisible}) {
         {/* <img src="../../icons/facebook.svg" alt="" /> */}
         <img src="../../../images/my_logo.png" className="format_image"/>
         <span style={{marginLeft:"66px",marginTop:"10px"}}>
-          TVIBE,Think Thanh's way 123
+          TVIBE,Think your way
         </span>
       </div>
       <div className="login_2">
