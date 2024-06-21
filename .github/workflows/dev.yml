@@ -17,4 +17,5 @@ jobs:
               run: |
                   cd ~/facebook/frontend
                   npm i
+                  pm2 delete all
                   pm2 start npm --name "my-react-app" -- start
