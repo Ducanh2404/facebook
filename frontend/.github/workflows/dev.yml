@@ -1,0 +1,17 @@
+name: fb_fe
+
+on:
+    push:
+        branch: main
+jobs:
+    Copy-source-code:
+        name: Copy Source Code
+        runs-on: dev_fe
+        steps:
+            - name: Checkout git repository
+              uses: actions/checkout@v3
+            - name: Copy file
+              run: |
+                  rsync -azh --exclude={.git,.github,.env,dist,node_modules,data} --delete ./ ~/facebook
+            - name: List file and folder
+              run: ls
