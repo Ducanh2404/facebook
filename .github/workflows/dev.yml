@@ -13,5 +13,8 @@ jobs:
             - name: Copy file
               run: |
                   rsync -azh --exclude={.git,.github,.env,dist,node_modules,data} --delete ./ ~/facebook
-            - name: List file and folder
-              run: ls
+            - name: Build and start application
+              run: |
+                  cd ~/facebook/frontend
+                  npm i
+                  npm start
